@@ -1,0 +1,278 @@
+#wpcontent {
+    padding-left: 0;
+}
+
+#wpwrap {
+    background-color: white;
+}
+
+#post-search-form {
+    height: 150px;
+    padding-top: 100px;
+    display: flex;
+}
+
+.post-search-form-inner {
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+.post-search-form-inner > * {
+    display: block;
+}
+
+#pfl-label {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+#pfl-container {
+
+    overflow: hidden;
+}
+
+#pfl-link {
+    height: 60px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    padding-right: 65px;
+    padding-left: 20px;
+    border-radius: 50px;
+    background-color: #FDFDFE;
+    box-shadow: 1px 5px 5px 0 #0000002e;
+}
+
+input:focus {
+    outline: none;
+}
+
+#pfl-submit {
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 68px;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+#pfl-submit:hover {
+    cursor: pointer;
+}
+
+#pfl-submit i {
+    color: blue;
+}
+
+#pfl-submit i:hover {
+    color: #1313bb;
+}
+
+#loading-search-gif {
+    display: none;
+    width: 40px;
+    height: 42px;
+    position: absolute;
+    right: 6px;
+    top: 0;
+}
+
+#ret-container {
+    display: none;
+    width: 55%;
+    margin: auto;
+    padding: 15px;
+    background-color: #8080801a;
+    position: relative;
+}
+
+#publish-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 40px;
+}
+
+#publish-container {
+    display: none;
+}
+
+#publish-container .pfl-publish {
+    width: 27.5%;
+    padding: 10px 15px 10px 0;
+    text-align: center;
+    background-color: #31A04C;
+    color: white;
+    font-size: 1.25rem;
+    position: relative;
+    transition: background-color 500ms;
+}
+
+#publish-container .pfl-publish:hover {
+    cursor: pointer;
+    background-color: #2d9446;
+}
+
+#publish-container .pfl-publish i {
+    position: absolute;
+    right: 15px;
+}
+
+#publish-container .pfl-clear {
+    width: 27.5%;
+    padding: 10px 15px 10px 0;
+    text-align: center;
+    background-color: #DC3F32;
+    color: white;
+    font-size: 1.25rem;
+    position: relative;
+    transition: background-color 500ms;
+}
+
+#publish-container .pfl-clear:hover {
+    cursor: pointer;
+    background-color: #c1372b;
+}
+
+#publish-container .pfl-clear i {
+    position: absolute;
+    right: 15px;
+}
+
+.publish-container {
+    position: absolute;
+    bottom: 15px;
+    right: 7px;
+    height: 20px !important;
+}
+
+.publish-container i {
+    font-size: 2rem;
+    color: #31A04C;
+}
+
+#ret-image {
+    border-radius: 3px;
+    position: relative;
+}
+
+#ret-image i {
+    opacity: 0;
+    display: flex;
+    color: white;
+    background-color: #00000036;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 250ms;
+}
+
+#ret-image:hover i {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#ret-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    height: auto;
+}
+
+
+#ret-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+#ret-description {
+    color: gray;
+}
+
+#ret-description:focus {
+    outline: none;
+}
+
+#correct-content {
+    background-color: #007cba;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 3px;
+}
+
+#correct-content:hover {
+    cursor: pointer;
+}
+
+.status-message {
+    position: absolute;
+    top: -100px;
+}
+
+.status-message-success {
+    color: white;
+    background-color: green;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100px;
+    animation: message-show 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.status-message-fail {
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100px;
+    animation: message-show 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes message-show {
+    0% {
+        top: -100px;
+    }
+    10% {
+        top: 0;
+    }
+    95% {
+        top: 0;
+    }
+    100% {
+        top: -100px;
+    }
+}
+
+.text-blue {
+    color: #407CE6;
+}
+
+.text-red {
+    color: #DC3F32;
+}
+
+.text-yellow {
+    color: #EDB10B;
+}
+
+.text-green {
+    color: #31A04C;
+}
