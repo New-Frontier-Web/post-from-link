@@ -23,6 +23,23 @@ class PFL_enqueue {
         return $tag;
     }
 
+    public function plugin_row_meta( $plugin_meta, $plugin_file ) {
+
+        // I am muting this function for now - just keeping it so I don't have to figure out how to do this
+        // in the future
+
+        if ( PFL_PLUGIN_BASE === $plugin_file ) {
+            $row_meta = [
+                'docs' => '<a href="https://go.elementor.com/docs-admin-plugins/" aria-label="' . esc_attr( esc_html__( 'View Elementor Documentation', 'elementor' ) ) . '" target="_blank">' . esc_html__( 'Docs & FAQs', 'elementor' ) . '</a>',
+                'ideo' => '<a href="https://go.elementor.com/yt-admin-plugins/" aria-label="' . esc_attr( esc_html__( 'View Elementor Video Tutorials', 'elementor' ) ) . '" target="_blank">' . esc_html__( 'Video Tutorials', 'elementor' ) . '</a>',
+            ];
+
+            $plugin_meta = array_merge( $plugin_meta, $row_meta );
+        }
+
+        return $plugin_meta;
+    }
+
 }
 
 class PFL_create_menus {

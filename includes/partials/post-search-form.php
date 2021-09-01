@@ -16,12 +16,6 @@
     </div>
 </form>
 
-<?php
-
-//var_dump( $GLOBALS['wp_filter'] );
-
-
-?>
 <div id="ret-container">
 
     <span>
